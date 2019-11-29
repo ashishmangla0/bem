@@ -8,6 +8,9 @@ html{
 }
 body{
     margin: 0;
+    color:#232323;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 .container {
     width: 100%;
@@ -26,37 +29,33 @@ body{
     justify-content: space-between;
 }
 
+a{
+    text-decoration: none;
+}
+.list {
+    padding: 0;
+}
+.list--type1{
+    list-style: none;
+}
 .header{
     background-color: #343a40;
  }
-
 .header__logo{
     font-size: 20px;
+    color: #FFFFFF;
 }
-
-
-.navbar-expand-lg li{
-    display: inline-block;
+.header__topbar-item{
+    display: inline-block
 }
-.navbar-expand-lg li> a {
-    padding-right: .5rem;
-    padding-left: .5rem;
+.header__top-link{
     display: block;
-    text-decoration: none;
-    color: #ffffff;
+    color: #FFFFFF;
+    padding: .5rem;
 }
 
-.navbar ul{
-    list-style: none;
 
-}
 
-.navbar .navbar-brand{
-    text-decoration: none;
-
-    color: #ffffff;
-
-}
 .section1{
     padding: 64px 32px;
     background: url(../images/bg-1.jpg) no-repeat center;
@@ -105,7 +104,4 @@ body{
     margin-right: -15px;
     margin-left: -15px;
 
-}
-.list {
-    padding: 0;
 }
