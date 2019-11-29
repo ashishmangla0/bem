@@ -26,12 +26,14 @@ body{
     justify-content: space-between;
 }
 
- header{
+.header{
     background-color: #343a40;
  }
-.navbar .logo{
+
+.header__logo{
     font-size: 20px;
 }
+
 
 .navbar-expand-lg li{
     display: inline-block;
@@ -103,4 +105,7 @@ body{
     margin-right: -15px;
     margin-left: -15px;
 
+}
+.list {
+    padding: 0;
 }
