@@ -6,6 +6,13 @@ html{
     min-height: 100%;
     position: relative;
 }
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 body{
     margin: 0;
     color:#232323;
@@ -21,14 +28,20 @@ body{
 }
 .container{
     max-width: 1140px;
-    display: flex;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
 
+}
+.container--header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::after,.container::before{
+    content: '';
+    display: table;
+}
+.container::after{
+    clear: both;
+}
 a{
     text-decoration: none;
 }
@@ -53,23 +66,33 @@ a{
     color: #FFFFFF;
     padding: .5rem;
 }
-
-
-
-.section1{
+.block{
     padding: 64px 32px;
+}
+
+.block__title{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.block__content{
+    font-size: 1.2rem;
+}
+.block--hero{
     background: url(../images/bg-1.jpg) no-repeat center;
     background-size: cover;
 }
-
-.section1 h1{
-    margin-top: 0;
-    font-size: 4.5rem;
-    font-weight: 300;
-    line-height: 1.2;
+.block--hero .block__title{
     color: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
 }
+.block--hero .block__content{
+    color:#ffffff;
+}
+
+
+
 .section1 p{
     margin-top: 0;
     color: #ffffff;
