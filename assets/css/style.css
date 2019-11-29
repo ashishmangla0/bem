@@ -58,6 +58,9 @@ a{
     font-size: 20px;
     color: #FFFFFF;
 }
+.header__topbar{
+    margin-left: auto;
+}
 .header__topbar-item{
     display: inline-block
 }
@@ -69,7 +72,6 @@ a{
 .block{
     padding: 64px 32px;
 }
-
 .block__title{
     font-weight: 600;
     margin-bottom: 2rem;
@@ -90,41 +92,18 @@ a{
 .block--hero .block__content{
     color:#ffffff;
 }
-
-
-
-.section1 p{
-    margin-top: 0;
-    color: #ffffff;
-    font-size: 20px;
+.service{
+    float: left;
+    width:100%;
 }
-
-.section2{
-    padding: 64px 32px;
-}
-
-
-.services .item{
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+.service__item{
+    width: 33.33333%;
+    float: left;
     padding: 0 15px;
+}
+.service__item-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
 
-
-}
-.services::after,.services::before{
-    content: '';
-    display: table;
-}
-.services::after{
-    clear: both;
-}
-.services{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-
-}
